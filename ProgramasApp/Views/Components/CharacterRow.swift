@@ -1,10 +1,3 @@
-// Criar uma struct replicável em outras partes do código
-// Recebe emoji, nome e papel
-// Alinhar com HStack (horizontal) o emoji e as informações do personagem
-// Alinhar com VStack (vertical) as informações do personagem -> Nome e Papel
-// Na hora de impletar utilizar um ForEach sobre os personagens para utilização do componente
-// Alinhar os componentes
-
 import SwiftUI
 
 struct CharacterRow: View {
@@ -17,7 +10,7 @@ struct CharacterRow: View {
             Text(emoji)
                 .font(.title2)
                 .frame(width: 44, height: 44)
-                .background(Color(.systemGray5))
+                .background(Color.gray.opacity(0.18))
                 .clipShape(Circle())
 
             VStack(alignment: .leading, spacing: 2) {
@@ -32,7 +25,7 @@ struct CharacterRow: View {
             Spacer()
         }
         .padding()
-        .background(Color(.secondarySystemBackground))
+        .background(Color.gray.opacity(0.10))
         .cornerRadius(10)
     }
 }
