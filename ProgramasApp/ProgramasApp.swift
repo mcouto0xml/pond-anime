@@ -1,4 +1,3 @@
-// ProgramasApp.swift
 import SwiftUI
 
 @main

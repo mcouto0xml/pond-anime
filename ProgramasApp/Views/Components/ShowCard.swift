@@ -95,7 +95,6 @@ struct ShowCard: View {
     }
 }
 
-// MARK: - Preview
 #Preview {
     VStack(spacing: 16) {
         ShowCard(programa: naruto)
